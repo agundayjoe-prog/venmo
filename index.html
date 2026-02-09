@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0a66d6">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Venmo">
+  <title>Venmo</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-content">
+      <div>
+        <h1 style="font-family: calibri; font-weight: lighter;" class="name">Donna Rodrigues ▾</h1>
+        <p class="username">@Donna-Rodrigues-18</p>
+      </div>
+
+      <div class="header-actions">
+        <div class="icon-circle badge">
+          <i style="color: #0a66d6;" class="fa-solid fa-bell"></i>
+          <span>3</span>
+        </div>
+        <div class="icon-circle">
+          <i style="color: #0a66d6;" class="fa-solid fa-gear"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- CURVE -->
+    <svg class="header-curve" viewBox="0 0 375 60" preserveAspectRatio="none">
+      <path d="M0,0 H375 V25 C280,60 95,60 0,25 Z" fill="#0a66d6"/>
+    </svg>
+  </header>
+
+  <!-- PROFILE -->
+  <div class="profile-zone">
+    <div class="profile-pic">
+      <img src="profile.jpeg" alt="Profile">
+      <div class="qr">
+        <i class="fa-solid fa-qrcode"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <div class="card action">
+        <i style="color: white; background-color: #0a66d6; padding: 5px; border-radius: 50%;" class="fa-solid fa-users"></i>
+        <span>Create a group</span>
+      </div>
+
+      <div class="card action">
+        <div class="avatars">
+          <span class="avatar text">CW</span>
+          <span class="avatar text">RF</span>
+          <span class="avatar image">
+            <img src="add.jpeg" alt="add">
+          </span>
+        </div>
+        <span>3 friends</span>
+      </div>
+    </div>
+
+    <!-- SEGMENT -->
+    <div class="segment">
+      <button class="active">Wallet</button>
+      <button>Transactions</button>
+    </div>
+
+    <!-- BALANCE -->
+    <div class="card">
+      <div class="row">
+        <strong>Balance</strong>
+        <span class="muted">
+          Account <br>& Routing
+          <i class="fa-regular fa-eye"></i>
+        </span>
+      </div>
+
+      <div class="balance">
+  <sup class="currency">$</sup>60,020<sup class="cents">28</sup>
+</div>
+
+
+      <div class="buttons">
+        <button class="outline">Transfer</button>
+        <button class="primary">Add money</button>
+      </div>
+    </div>
+
+    <!-- CRYPTO -->
+    <div class="card">
+      <strong>Crypto</strong>
+      <div class="balance">
+       <sup> <span class="currency">$</sup></span>0
+      </div>
+      <p class="muted">Last update: 3:14 PM*</p> <br>
+      <button class="outline full">View</button>
+    </div>
+
+    <!-- VISA PROMO -->
+    <div class="card promo">
+      <p><strong>Send & receive money</strong> with Visa+</p>
+    </div>
+
+    <!-- BANKS -->
+    <section class="section">
+      <h2 style="margin-left: 10px;">Banks and cards</h2>
+      <div class="bank-grid">
+        <div class="bank-card">
+          <img style="background-size: 100%;" src="venmo2.png" alt="Venmo">
+        </div>
+        <div class="bank-card">
+          <img src="images (2).jpeg" alt="Chase">
+        </div>
+      </div>
+    </section>
+
+    <div class="content-spacer"></div>
+  </main>
+
+  <!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+
+  <!-- NOTCH BACKGROUND -->
+  <svg class="nav-notch" viewBox="0 0 375 80" preserveAspectRatio="none">
+    <path
+      d="M0,0
+         H155
+         C155,-10 155,45 187.5,45
+         C200,35 200,0 240,0
+         H375
+         V80
+         H0
+         Z"
+      fill="#ffffff"
+    />
+  </svg>
+
+  <!-- FLOATING PAY BUTTON -->
+  <div class="fab">
+   
+    <span class="fab-label">Pay/Request</span>
+  </div>
+
+  <!-- NAV ITEMS -->
+  <div class="nav-items">
+    <div class="nav-item active">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </div>
+
+    <div class="nav-item">
+      <i class="fa fa-credit-card-alt"></i>
+      <span>Cards</span>
+    </div>
+
+    <div class="nav-spacer"></div>
+
+    <div class="nav-item">
+      <i style="color: aliceblue; background-color: #0a66d6; padding: 8px; font-size: 13px; border-radius: 50%;" class="fa-solid fa-bitcoin-sign"></i>
+      <span>Crypto</span>
+    </div>
+
+    <div class="nav-item">
+       <img style="width: 30px; border-radius: 50%;" src="profile.jpeg" alt="Profile">
+      <span>Me</span>
+    </div>
+  </div>
+
+</nav>
+
+</div>
+
+</body>
+
+<script src="app.js"></script>
+</html>
